@@ -7,6 +7,6 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 exec $SHELL --login
 sudo yum -y install bzip2 gcc openssl-devel readline-devel zlib-devel
-rbenv install 2.4.4
-rbenv global
+rbenv install 2.6.1
+rbenv global 2.6.1
 ruby -v

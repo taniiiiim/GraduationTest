@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#MySQLのインストール
 sudo yum remove mariadb-libs
 sudo rm -rf /var/lib/mysql
 
@@ -12,4 +13,6 @@ sudo cat /var/log/mysqld.log | grep password
 mysql_secure_installation
 mysql -u root -p
 
-
+#mysql2のインストール
+sudo yum install mysql-devel
+gem install mysql2 -v '0.5.2' --source 'https://rubygems.org/'
